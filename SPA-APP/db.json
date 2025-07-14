@@ -1,0 +1,212 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "admin",
+      "email": "admin@admin.com",
+      "password": "123456",
+      "rol": "admin"
+    },
+    {
+      "id": "2",
+      "nombre": "juan",
+      "email": "juan@correo.com",
+      "password": "123456",
+      "rol": "usuario"
+    },
+    {
+      "id": "e179",
+      "nombre": "deivi",
+      "email": "deivi@gmail.com",
+      "password": "hola123",
+      "rol": "admin"
+    },
+    {
+      "id": "eee5",
+      "nombre": "sangue",
+      "email": "guevon@gmail.com",
+      "password": "hola123",
+      "rol": "usuario"
+    },
+    {
+      "id": "f701",
+      "nombre": "melochu",
+      "email": "chupe@gmail.com",
+      "password": "hola123",
+      "rol": "admin"
+    },
+    {
+      "id": "225e",
+      "nombre": "crack",
+      "email": "familia@gmail.com",
+      "password": "hola123",
+      "rol": "usuario"
+    },
+    {
+      "id": "68cc",
+      "nombre": "niko",
+      "email": "niko@gmail.com",
+      "password": "hola123",
+      "rol": "usuario"
+    },
+    {
+      "id": "1f30",
+      "nombre": "pepo",
+      "email": "pepito@gmail.com",
+      "password": "hola123",
+      "rol": "usuario"
+    },
+    {
+      "id": "26b8",
+      "nombre": "saiyan",
+      "email": "saya@gmail.com",
+      "password": "hola123",
+      "rol": "admin"
+    },
+    {
+      "id": "abec",
+      "nombre": "narizon",
+      "email": "nari@gmail.com",
+      "password": "hola123",
+      "rol": "usuario"
+    },
+    {
+      "id": "a9e3",
+      "nombre": "lukas",
+      "email": "lukas@gmail.com",
+      "password": "hola123",
+      "rol": "admin"
+    },
+    {
+      "id": "288c",
+      "nombre": "juanca",
+      "email": "juan@gmail.com",
+      "password": "hola123",
+      "rol": "usuario"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "1",
+      "nombre": "HTML Básico",
+      "descripcion": "Curso para principiantes en HTML.",
+      "fecha": "2025-07-20",
+      "cupos": 12,
+      "imagen": "https://via.placeholder.com/80"
+    },
+    {
+      "nombre": "JavaScript Intermedio",
+      "descripcion": "Funciones, eventos y lógica aplicada.",
+      "fecha": "2025-07-25",
+      "cupos": 11,
+      "imagen": "https://via.placeholder.com/80",
+      "id": "2"
+    },
+    {
+      "id": "5c58",
+      "nombre": "python avanzado ",
+      "descripcion": "saber todo sobre arrays",
+      "fecha": "2024-08-02",
+      "cupos": 2,
+      "imagen": "https://via.placeholder.com/80"
+    },
+    {
+      "id": "b4d8",
+      "nombre": "manejo del DOM y SPA",
+      "descripcion": "que vuelta esto",
+      "fecha": "2023-06-02",
+      "cupos": 1,
+      "imagen": "https://via.placeholder.com/80"
+    },
+    {
+      "id": "cb81",
+      "nombre": "base de datos SQL",
+      "descripcion": "da base",
+      "fecha": "2024-12-08",
+      "cupos": 18,
+      "imagen": "https://via.placeholder.com/80"
+    }
+  ],
+  "reservas": [
+    {
+      "id": "9acb",
+      "idCurso": 1,
+      "idUsuario": "eee5"
+    },
+    {
+      "id": "7ff7",
+      "idCurso": 2,
+      "idUsuario": "eee5"
+    },
+    {
+      "id": "262f",
+      "idCurso": 1,
+      "idUsuario": "eee5"
+    },
+    {
+      "id": "ad94",
+      "idCurso": 1,
+      "idUsuario": "eee5"
+    },
+    {
+      "id": "d132",
+      "idCurso": 2,
+      "idUsuario": "eee5"
+    },
+    {
+      "id": "0959",
+      "idCurso": 1,
+      "idUsuario": "68cc"
+    },
+    {
+      "id": "4b3a",
+      "idCurso": 2,
+      "idUsuario": "68cc"
+    },
+    {
+      "id": "5e05",
+      "idCurso": 2,
+      "idUsuario": "68cc"
+    },
+    {
+      "id": "865c",
+      "idCurso": 1,
+      "idUsuario": "68cc"
+    },
+    {
+      "id": "b1cd",
+      "idCurso": 2,
+      "idUsuario": "68cc"
+    },
+    {
+      "id": "2833",
+      "idCurso": 1,
+      "idUsuario": "1f30"
+    },
+    {
+      "id": "ac8b",
+      "idCurso": 2,
+      "idUsuario": "1f30"
+    },
+    {
+      "id": "74b9",
+      "idCurso": 1,
+      "idUsuario": "1f30"
+    },
+    {
+      "id": "f135",
+      "idCurso": 2,
+      "idUsuario": "abec"
+    },
+    {
+      "id": "ae12",
+      "idCurso": 2,
+      "idUsuario": "abec"
+    },
+    {
+      "id": "64ec",
+      "idCurso": 1,
+      "idUsuario": "288c"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.form-section {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section input,
+.form-section select {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-section button {
+  padding: 12px;
+  background-color: #7b2ff7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-section button:hover {
+  background-color: #6a20e3;
+}
+
+.form-section p {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+.section:not(.form-section) {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.sidebar {
+  width: 220px;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar p {
+  margin: 0 0 20px;
+  font-weight: bold;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #7b2ff7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #6a20e3;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+}
+
+#eventFormContainer input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+#eventFormContainer button {
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+
+.event-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+
+.event-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.event-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.event-actions button {
+  padding: 8px 16px;
+  background-color: #7b2ff7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.event-actions button:hover {
+  background-color: #6a20e3;
+}
+
+.event-actions .disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

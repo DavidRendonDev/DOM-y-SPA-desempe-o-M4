@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Eventos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Login Section -->
+  <section id="loginSection" class="form-section">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email" />
+    <input type="password" id="loginPassword" placeholder="Password" />
+    <button onclick="login()">Log in</button>
+    <p>¿No tienes cuenta? <a href="#" onclick="showSection('registerSection')">Regístrate</a></p>
+  </section>
+
+  <!-- Register Section -->
+  <section id="registerSection" class="form-section hidden">
+    <h2>Register</h2>
+    <input type="text" id="registerName" placeholder="Full Name" />
+    <input type="email" id="registerEmail" placeholder="Email" />
+    <input type="password" id="registerPassword" placeholder="Password" />
+    <input type="password" id="registerConfirm" placeholder="Confirm Password" />
+    <select id="registerRole">
+      <option value="usuario">Usuario</option>
+      <option value="admin">Administrador</option>
+    </select>
+    <button onclick="register()">Register</button>
+    <p>¿Ya tienes cuenta? <a href="#" onclick="showSection('loginSection')">Inicia sesión</a></p>
+  </section>
+
+  <!-- Admin Section -->
+  <section id="adminSection" class="hidden">
+    <div class="sidebar">
+      <p><strong id="adminName">Admin</strong> (Admin)</p>
+        <button onclick="showSection('adminCourses')">Eventos</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <div class="main-content" id="adminCourses">
+      <h2>Eventos</h2>
+      <button onclick="showAddEventForm()">Agregar nuevo evento</button>
+      <div id="eventListAdmin"></div>
+      <div id="eventFormContainer" class="hidden">
+        <h3>Crear Evento</h3>
+        <input type="text" id="eventName" placeholder="Nombre" />
+        <input type="text" id="eventDesc" placeholder="Descripción" />
+        <input type="date" id="eventDate" />
+        <input type="number" id="eventCapacity" placeholder="Cupos" />
+        <button onclick="saveEvent()">Guardar</button>
+        <button onclick="hideAddEventForm()">Cancelar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usuario Section -->
+  <section id="userSection" class="hidden">
+    <div class="sidebar">
+      <p><strong id="userName">Usuario</strong> (Usuario)</p>
+        <button onclick="showSection('userCourses')">Eventos Disponibles</button>       
+      <button onclick="logout()">Logout</button>    
+    </div>
+    <div class="main-content" id="userCourses">
+      <h2>Eventos Disponibles</h2>
+      <div id="eventListUser"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
